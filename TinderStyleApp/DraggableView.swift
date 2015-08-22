@@ -6,6 +6,9 @@
 //  Copyright (c) 2014年 kiiita. All rights reserved.
 //
 
+let CARD_HEIGHT: CGFloat = 260
+let CARD_WIDTH: CGFloat = 260
+
 import Foundation
 import UIKit
 let ACTION_MARGIN  = 120 //%%% distance from center where the action applies. Higher = swipe further in order for the action to be called
@@ -25,7 +28,10 @@ class DraggableView: UIView {
     
     
     var delegate: DraggableViewDelegate?
-    var information: UILabel = UILabel()
+    
+    var information: UIImageView = UIImageView()   //====================
+    //var information: UILabel = UILabel()
+    //うえ
     var overlayView: OverlayView?
     var panGestureRecognizer: UIPanGestureRecognizer?
     var originalPoint: CGPoint = CGPoint()
@@ -37,10 +43,12 @@ class DraggableView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setupView()
-        information = UILabel(frame:CGRectMake(0, 50, self.frame.size.width, 100))
-        information.text = "no info given"
-        information.textAlignment = NSTextAlignment.Center
-        information.textColor = UIColor.blackColor()
+        //information = UILabel(frame:CGRectMake(0, 50, self.frame.size.width, 100))
+//        information.text = "no info given"
+//        information.textAlignment = NSTextAlignment.Center
+//        information.textColor = UIColor.blackColor()
+        information = UIImageView(frame:CGRectMake(0, 0, CARD_WIDTH, CARD_HEIGHT)) //==========
+         //うえ
         
         self.backgroundColor = UIColor.blackColor()
         

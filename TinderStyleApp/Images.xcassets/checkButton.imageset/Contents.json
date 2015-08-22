@@ -3,16 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Oval 3 + Rectangle 11.png"
+      "filename" : "buttonLike.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "Oval 3 + Rectangle 11-1.png"
+      "filename" : "buttonLike@2x.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "buttonLike@3x.png"
     }
   ],
   "info" : {

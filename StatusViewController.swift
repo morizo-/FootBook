@@ -9,10 +9,36 @@
 import UIKit
 
 class StatusViewController: UIViewController {
+    
+    var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
 
+
+    @IBOutlet weak var todayLikeCountLabel: UILabel!
+    @IBOutlet weak var totalLikeCountLabel: UILabel!
+    @IBOutlet weak var totalRankCountLabel: UILabel!
+    @IBOutlet weak var typeRankCountLabel: UILabel!
+    
+    
+    @IBOutlet weak var todayLikeLabel: UILabel!
+    @IBOutlet weak var totalLikeLabel: UILabel!
+    @IBOutlet weak var totalRankLabel: UILabel!
+    @IBOutlet weak var typeRankLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        todayLikeLabel.text = "本日のLike"
+        totalLikeLabel.text = "今までのLike"
+        totalRankLabel.text = "総合ランキング"
+        typeRankLabel.text = "犬種"
+        
+        //数字表記
+//        todayLikeCountLabel.text = String(num)
+//        totalLikeCountLabel.text = String(num2)
+//        totalRankCountLabel.text = "¥(String(num))"
+//        typeRankCountLabel.text = "¥(String(num))"
+
+        
         // Do any additional setup after loading the view.
     }
 
