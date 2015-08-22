@@ -75,11 +75,11 @@ class DraggableViewBackground: UIView, DraggableViewDelegate{
     }
     
     func setupView() {
-        self.backgroundColor = UIColor(red: 0.529, green: 0.809, blue: 0.98, alpha: 1.0);
-        menuButton = UIButton(frame:CGRectMake(17,34,22,15))
-        messageButton = UIButton(frame:CGRectMake(284,34,18,18))
-        xButton = UIButton(frame:CGRectMake(60,485,59,59))
-        checkButton = UIButton(frame:CGRectMake(200,485,59,59));
+        //self.backgroundColor = UIColor(red: 0.529, green: 0.809, blue: 0.98, alpha: 1.0);
+        //menuButton = UIButton(frame:CGRectMake(17,34,22,15))
+        //messageButton = UIButton(frame:CGRectMake(284,34,18,18))
+       // xButton = UIButton(frame:CGRectMake(60,485,59,59))
+       // checkButton = UIButton(frame:CGRectMake(200,485,59,59));
 //        result = UILabel(frame:CGRectMake(self.bounds.size.width - 100 / 2, self.bounds.size.height - 100 / 2, self.frame.size.width, 100))
         result = UILabel(frame:CGRectMake(60, 200, 200, 100))
         result.numberOfLines = 0

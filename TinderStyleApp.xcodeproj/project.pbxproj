@@ -20,6 +20,7 @@
 		1EBB855B19B49D9B00EF5588 /* DraggableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB855A19B49D9B00EF5588 /* DraggableViewBackground.swift */; };
 		1EBB855D19B4A34B00EF5588 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB855C19B4A34B00EF5588 /* DraggableView.swift */; };
 		1EBB855F19B4BD1800EF5588 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB855E19B4BD1800EF5588 /* OverlayView.swift */; };
+		61DF34561B8857E400EAF7A7 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DF34551B8857E400EAF7A7 /* StatusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1EBB855A19B49D9B00EF5588 /* DraggableViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableViewBackground.swift; sourceTree = "<group>"; };
 		1EBB855C19B4A34B00EF5588 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 		1EBB855E19B4BD1800EF5588 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		61DF34551B8857E400EAF7A7 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusViewController.swift; path = ../StatusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		1D7E59F619B1F18600D283C5 /* TinderStyleApp */ = {
 			isa = PBXGroup;
 			children = (
+				61DF34551B8857E400EAF7A7 /* StatusViewController.swift */,
 				1EBB855C19B4A34B00EF5588 /* DraggableView.swift */,
 				1EBB855A19B49D9B00EF5588 /* DraggableViewBackground.swift */,
 				1EBB855E19B4BD1800EF5588 /* OverlayView.swift */,
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61DF34561B8857E400EAF7A7 /* StatusViewController.swift in Sources */,
 				1EBB855D19B4A34B00EF5588 /* DraggableView.swift in Sources */,
 				1EBB855F19B4BD1800EF5588 /* OverlayView.swift in Sources */,
 				1DCB9C7219BAC71500749CF1 /* Extension.swift in Sources */,
