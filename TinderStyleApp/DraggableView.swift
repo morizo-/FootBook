@@ -26,11 +26,12 @@ protocol DraggableViewDelegate  {
 
 class DraggableView: UIView {
     
+    var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
     
     var delegate: DraggableViewDelegate?
     
     var information: UIImageView = UIImageView()   //====================
-    //var information: UILabel = UILabel()
+    var informationName: UILabel = UILabel()
     //うえ
     var overlayView: OverlayView?
     var panGestureRecognizer: UIPanGestureRecognizer?
@@ -43,18 +44,27 @@ class DraggableView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setupView()
-        //information = UILabel(frame:CGRectMake(0, 50, self.frame.size.width, 100))
-//        information.text = "no info given"
-//        information.textAlignment = NSTextAlignment.Center
-//        information.textColor = UIColor.blackColor()
+        
+        
+        
+        informationName = UILabel(frame:CGRectMake(0, 260, self.frame.size.width, 50))
+        informationName.text = "no info given"
+        informationName.textAlignment = NSTextAlignment.Center
+        informationName.textColor = UIColor.blackColor()
         information = UIImageView(frame:CGRectMake(0, 0, CARD_WIDTH, CARD_HEIGHT)) //==========
          //うえ
+        
+        
         
         self.backgroundColor = UIColor.blackColor()
         
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: Selector("beingDragged:"))
         self.addGestureRecognizer(panGestureRecognizer!)
+        
+        self.addSubview(informationName)
         self.addSubview(information)
+         //うえ
+        
         
         overlayView = OverlayView(frame: CGRectMake(self.frame.size.width/2-100, 0, 100, 100))
         overlayView!.alpha = 0
@@ -139,6 +149,12 @@ class DraggableView: UIView {
         })
         delegate?.cardSwipedRight(self)
         NSLog("YES")
+        if informationName.text == "まさお"{
+            appDelegate.countTodayLike++;
+            appDelegate.countTotalLike++;
+            NSLog(String(appDelegate.countTotalLike));
+
+        }
     }
     
     func leftAction() {
@@ -150,6 +166,7 @@ class DraggableView: UIView {
         })
         delegate?.cardSwipedLeft(self)
         NSLog("NO")
+        
     }
     
     func rightClickAction() {
@@ -162,6 +179,11 @@ class DraggableView: UIView {
         })
         delegate?.cardSwipedRight(self)
         NSLog("YES")
+        if informationName.text == "まさお"{
+            appDelegate.countTodayLike++;
+            appDelegate.countTotalLike++;
+            NSLog(String(appDelegate.countTotalLike));
+        }
     }
     func leftClickAction() {
         var finishPoint: CGPoint = CGPointMake(-600, self.center.y)

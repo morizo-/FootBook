@@ -15,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     
+    var countTodayLike:Int = 100;
+    var countTotalLike:Int = 1000;
+ 
     
     
     

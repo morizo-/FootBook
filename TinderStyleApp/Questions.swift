@@ -68,3 +68,31 @@ struct questionGroupE {
         ]
     }
 }
+
+
+    
+    struct questionGroupPic {
+        var questionsList : [String]
+        var answerWhenYes: String
+        var answerWhenNo: String
+        
+        init() {
+            self.questionsList = ["1", "2","3", "8","5", "6","8", "4","7","8"]
+            self.answerWhenYes = "OK"
+            self.answerWhenNo = "NG"
+        }
+    }
+
+struct questionGroupName {
+    var questionsList : [String]
+    var answerWhenYes: String
+    var answerWhenNo: String
+    
+    init() {
+        self.questionsList = ["ポチ", "マロン","にゃんた", "まさお","トム", "メイ","まさお", "みいこ","くう","まさお"]
+        self.answerWhenYes = "OK"
+        self.answerWhenNo = "NG"
+    }
+}
+
+
