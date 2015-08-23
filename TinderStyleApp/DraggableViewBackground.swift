@@ -49,7 +49,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate{
 //    }
     
     override init(frame:CGRect) {
-        super.init(frame: frame)
+        super.init(frame:  CGRectMake(0, 0, 400, 400))
         super.layoutSubviews()
         self.setupView()
         
