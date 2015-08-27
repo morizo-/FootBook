@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBAction func bottonHamburger(sender: AnyObject) {
         
         
-        UIView.animateWithDuration(1, // アニメーションの時間
+        UIView.animateWithDuration(0.5, // アニメーションの時間
             animations: {() -> Void  in
                 // アニメーションする処理
                 self.hamburgerView.frame.origin.x = UIScreen.mainScreen().bounds.width - 320
@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         count++
         NSLog("count");
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

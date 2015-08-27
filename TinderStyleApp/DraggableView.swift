@@ -66,7 +66,8 @@ class DraggableView: UIView {
          //うえ
         
         
-        overlayView = OverlayView(frame: CGRectMake(self.frame.size.width/2-100, 0, 100, 100))
+       // overlayView = OverlayView(frame: CGRectMake(self.frame.size.width/2-100, 0, 100, 100))
+        overlayView = OverlayView(frame: CGRectMake(0, 0, 0, 0))
         overlayView!.alpha = 0
         self.addSubview(overlayView!)
         

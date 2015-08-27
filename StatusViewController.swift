@@ -30,13 +30,13 @@ class StatusViewController: UIViewController {
         todayLikeLabel.text = "本日のLike"
         totalLikeLabel.text = "今までのLike"
         totalRankLabel.text = "総合ランキング"
-        typeRankLabel.text = "亀"
+        typeRankLabel.text = "かめ"
         
         //数字表記
         todayLikeCountLabel.text = String(appDelegate.countTodayLike)
         totalLikeCountLabel.text = String(appDelegate.countTotalLike)
-        totalRankCountLabel.text = "110"
-        typeRankCountLabel.text = "11"
+        totalRankCountLabel.text = "110位"
+        typeRankCountLabel.text = "11位"
 
         
         // Do any additional setup after loading the view.

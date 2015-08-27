@@ -100,8 +100,8 @@ class DraggableViewBackground: UIView, DraggableViewDelegate{
   //      self.backgroundColor = UIColor(red: 0.529, green: 0.809, blue: 0.98, alpha: 1.0);
 //        menuButton = UIButton(frame:CGRectMake(17,34,22,15))
 //        messageButton = UIButton(frame:CGRectMake(284,34,18,18))
-        xButton = UIButton(frame:CGRectMake(60,445,59,59))
-        checkButton = UIButton(frame:CGRectMake(200,445,59,59));
+        xButton = UIButton(frame:CGRectMake(60,425,59,59))
+        checkButton = UIButton(frame:CGRectMake(200,425,59,59));
         logo = UIImageView(frame:CGRectMake(200, 50, self.bounds.width-200, 30))
         logo.image = UIImage(named: "logo.png")
         logo.layer.position = CGPoint(x: self.bounds.width/2, y:65)
